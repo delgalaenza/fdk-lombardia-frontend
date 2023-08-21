@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fdk-lombardia-frontend';
+
+  carouselItems = [
+    { id: 1, title: 'First Slide' },
+    { id: 2, title: 'Second Slide' },
+    { id: 3, title: 'Third Slide' }
+  ];
 }

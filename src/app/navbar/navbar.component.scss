@@ -1,0 +1,19 @@
+  .navbar {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .navbarScrolled {
+    background: linear-gradient(to bottom, #2bbcee, white)!important; /* Change this to the desired background color */
+  }
+
+  .navbar-brand {
+    height: 100%;
+  }
+
+
+
