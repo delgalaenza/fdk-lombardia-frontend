@@ -7,7 +7,6 @@
     height: 120px;
     display: flex;
     justify-content:space-between;
-/*     align-items: ; */
   }
   
   .image-container {
@@ -31,25 +30,76 @@
   }
 
   .external-links-container > div {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(to bottom, #45a049, #357e3a);
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(to top, #3a60aa, #7e99d1);
   color: white;
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
   }
 
-  .external-links-container > div > img {
-    width: 50px; /* Adjust logo size */
-    height: 50px; /* Adjust logo size */
-    margin-bottom: 10px;
+  .external-links-container  >div:hover {
+    background: #3a60aa;
+  }
+  
+  div.gallery:hover {
+    transform: scale(1.2);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }
 
-  .external-links-container  >div:hover {
-    background: #45a049;
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+
+    .external-links-container > div {
+        margin:10px
+      }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+
+    .external-links-container {
+      display: flex; /* Display children in a row */
+      justify-content: space-between; /* Distribute space between buttons */
+      align-items: center; /* Center items vertically */
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .gallery-container {
+    padding: 50px;
   }
