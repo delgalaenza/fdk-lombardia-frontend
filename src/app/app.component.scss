@@ -6,9 +6,18 @@
   .logo-container {
     height: 120px;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
   }
   
+  .social-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-container > img{
+    padding: 10px;
+  }
+
   .image-container {
     overflow: hidden;
     width: 100%;
@@ -22,9 +31,9 @@
   }
 
   .external-links-container {
-    display: flex; /* Display children in a row */
-    justify-content: space-between; /* Distribute space between buttons */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
     background: linear-gradient(to bottom, #2bbcee, white);
   }
@@ -102,4 +111,5 @@
 
   .gallery-container {
     padding: 50px;
+    background-color: #F5F5F5;
   }
