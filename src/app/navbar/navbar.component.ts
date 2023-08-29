@@ -8,10 +8,15 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
 
   scrolled: boolean = false;
+  navbarOpen = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     this.scrolled = window.scrollY > 50;
     console.log(this.scrolled)
+  }
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
   }
 }

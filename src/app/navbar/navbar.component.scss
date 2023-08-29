@@ -16,4 +16,31 @@
   }
 
 
+  .socialContainer > img {
+    padding: 5px;
+  }
+
+//solo smarphone
+@media (max-width:570px)  { 
+  .navbar {
+    height: 50px;
+  }
+  .nav-item {
+    background-color: black;
+   }
+
+   .nav-item > a {
+    color: white
+   }
+ }
+
+ //solo laptop
+@media (min-width:570px)  { 
+  .socialContainer {
+    display: none;
+  }
+ }
+
+
+
 

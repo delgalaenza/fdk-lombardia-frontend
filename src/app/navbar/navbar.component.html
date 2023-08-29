@@ -1,10 +1,14 @@
 <nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <button *ngIf="!navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" (click)="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+    <button *ngIf="navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" (click)="toggleNavbar()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent" [ngClass]="{ 'show': navbarOpen }">
       <ul class="navbar-nav  center-navbar">
         <li class="nav-item">
           <a class="nav-link" href='#'>IL COMITATO</a>
@@ -59,4 +63,11 @@
         </li>
     </ul>
    </div>
+
+   <div class="socialContainer">
+    <a href="https://www.instagram.com/federkombat_lombardia/" target="_blank"><img src="../../assets/src/images/instagram_small.png"></a>
+    <a href="https://www.facebook.com/people/FederKombat-Lombardia/100063499965759/" target="_blank"><img src="../../assets/src/images/fb_small.png"></a>
+   </div>
+
+
 </nav>
