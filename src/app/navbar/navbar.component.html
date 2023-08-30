@@ -1,10 +1,10 @@
 <nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled">
 
-    <button *ngIf="!navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" (click)="toggleNavbar()">
+    <button *ngIf="!navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-label="burger-menu" (click)="toggleNavbar() ">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <button *ngIf="navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" (click)="toggleNavbar()">
+    <button *ngIf="navbarOpen" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-label="toggle-menu" (click)="toggleNavbar()">
       <span aria-hidden="true">&times;</span>
     </button>
 
@@ -65,8 +65,8 @@
    </div>
 
    <div class="socialContainer">
-    <a href="https://www.instagram.com/federkombat_lombardia/" target="_blank"><img src="../../assets/src/images/instagram_small.png"></a>
-    <a href="https://www.facebook.com/people/FederKombat-Lombardia/100063499965759/" target="_blank"><img src="../../assets/src/images/fb_small.png"></a>
+    <a href="https://www.instagram.com/federkombat_lombardia/" target="_blank"><img src="../../assets/src/images/instagram_small.png"  alt="Instagram"></a>
+    <a href="https://www.facebook.com/people/FederKombat-Lombardia/100063499965759/" target="_blank"><img src="../../assets/src/images/fb_small.png"  alt="Facebook"></a>
    </div>
 
 

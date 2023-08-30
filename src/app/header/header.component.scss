@@ -28,13 +28,12 @@
   //solo smarphone
 @media (max-width:570px)  { 
     .noSmallSizeItem {
-        border: 1px solid red;
         display: none!important;
     }
 
     .logo-container > img {
         width: 100%;
-      }
+    }
 }
 
   
