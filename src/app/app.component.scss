@@ -20,7 +20,7 @@
   background: linear-gradient(to bottom, #2bbcee, white);
 }
 
-.external-links-container>div {
+.external-links-container> a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,9 +28,10 @@
   text-align: center;
   width: 200px;
   height: 50px;
-  background: linear-gradient(to top, #3a60aa, #7e99d1);
+  font-weight: bold;
+/*   background: linear-gradient(to top, #3a60aa, #7e99d1);
   color: white;
-  border-radius: 5px;
+  border-radius: 5px; */
   cursor: pointer;
   padding: 10px;
 }
@@ -38,6 +39,11 @@
 .external-links-container>div:hover {
   background: #3a60aa;
 }
+
+/* .external-links-container > a {
+  text-decoration: none;
+  color: white;
+} */
 
 div.gallery:hover {
   transform: scale(1.2);
@@ -85,7 +91,7 @@ div.desc {
     flex-direction: column;
   }
 
-  .external-links-container > div {
+  .external-links-container > a {
     margin:10px
   }
 
