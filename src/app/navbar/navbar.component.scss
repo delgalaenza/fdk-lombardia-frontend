@@ -1,3 +1,5 @@
+  @import '../../assets/scss/utils.scss';
+  
   .navbar {
     height: 80px;
     margin: 0;
@@ -21,7 +23,7 @@
   }
 
   .show > ul > li{
-    background-color: #2bbcee ;
+    background-color: $base-color;
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -33,7 +35,7 @@
     margin-bottom: 20px;
     margin-top: 10px;
     background-color: white;
-    color: #2bbcee;
+    color: $base-color;
   }
 
 
@@ -53,13 +55,13 @@
 
    .burger-button{
     border:none;
-    background-color: #F8F9FA;
+    background-color: $light-bg-color;
   }
 
   .burger-button::before {
     content: "\2630";
     font-size: 1.6em;
-    color: #2bbcee;
+    color: $base-color;
     padding-left: 20px;
   }
  }
@@ -71,7 +73,7 @@
   }
 
   .navbarScrolled {
-    background: linear-gradient(to bottom, #2bbcee, white)!important; /* Change this to the desired background color */
+    background: linear-gradient(to bottom, $base-color, white)!important; /* Change this to the desired background color */
   }
 
 

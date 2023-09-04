@@ -1,8 +1,10 @@
+@import '../assets/scss/utils.scss';
+
 .image-container {
   overflow: hidden;
   width: 100%;
   height: 500px;
-  background-color: #f0f0f0; /* Background color while image loads */
+  background-color: $light-bg-color;
   position: relative;
 }
 
@@ -29,7 +31,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #2bbcee, white);
+  background: linear-gradient(to bottom, $base-color, white);
 }
 
 .external-links-container> a {
@@ -43,6 +45,7 @@
   font-weight: bold;
   cursor: pointer;
   padding: 10px;
+  background-color: $second-color;
 }
 
 div.gallery:hover {
@@ -76,7 +79,7 @@ div.desc {
 
 .gallery-container {
   padding: 50px;
-  background-color: #F5F5F5;
+  background-color: $light-bg-color;
 }
 
 

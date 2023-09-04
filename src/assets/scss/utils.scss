@@ -1,0 +1,9 @@
+$base-color: #2bbcee;
+
+$second-color: #4264a5;
+
+$light-bg-color: #F8F9FA;
+
+@mixin debug{
+    border: 2px solid red;
+}
