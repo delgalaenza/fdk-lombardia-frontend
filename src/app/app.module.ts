@@ -7,12 +7,16 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
+import { ScrollListenerDirective } from './shared/directives/scroll-listener.directive';
+import { ResizeListenerDirective } from './shared/directives/resize-listener.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    ScrollListenerDirective,
+    ResizeListenerDirective
   ],
   imports: [
     BrowserModule,
