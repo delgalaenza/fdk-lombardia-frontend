@@ -8,10 +8,6 @@
     z-index: 2;
   }
 
-  .navbarScrolled {
-    background: linear-gradient(to bottom, #2bbcee, white)!important; /* Change this to the desired background color */
-  }
-
   .navbar-brand {
     height: 100%;
   }
@@ -40,17 +36,6 @@
     color: #2bbcee;
   }
 
-  .burger-button {
-    background-color: white;
-    color: #2bbcee!important;
-  }
-
-  .burger-button::before {
-    content: "\2630";
-    font-size: 1.4em;
-    color: #2bbcee;
-  }
-
 
   .socialContainer > a {
     padding: 10px;
@@ -58,7 +43,6 @@
 
 //solo smarphone
 @media (max-width:570px)  { 
-
   .navbar {
     height: 50px;
   }
@@ -66,11 +50,32 @@
    .nav-item > a {
     color: white
    }
+
+   .burger-button{
+    border:none;
+    background-color: #F8F9FA;
+  }
+
+  .burger-button::before {
+    content: "\2630";
+    font-size: 1.6em;
+    color: #2bbcee;
+    padding-left: 20px;
+  }
  }
 
  //solo laptop
 @media (min-width:570px)  { 
   .socialContainer {
+    display: none;
+  }
+
+  .navbarScrolled {
+    background: linear-gradient(to bottom, #2bbcee, white)!important; /* Change this to the desired background color */
+  }
+
+
+  .burger-button {
     display: none;
   }
  }
