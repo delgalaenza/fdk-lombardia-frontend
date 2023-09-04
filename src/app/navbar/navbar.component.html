@@ -1,71 +1,71 @@
-<nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled" [class.hide-nav]="navbarOpen">
-
-    <button *ngIf="!navbarOpen" class="burger-button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-label="burger-menu" (click)="toggleNavbar() ">
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarContent" [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav  center-navbar">
-        <li class="nav-item">
-          <button *ngIf="navbarOpen" class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-label="toggle-menu" (click)="toggleNavbar()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <a class="nav-link" href='#'>IL COMITATO</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>SETTORI</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>EVENTI</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>FORMAZIONE</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>AFFILIZAZIONE E TESSERAMENTO</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>ATLETI RING</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>TEAM LOMBARDIA</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>PARTNER</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline">
-          <span class="nav-link">|</span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='#'>CONTATTI</a>
-        </li>
+<nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled"
+  [class.hide-nav]="navbarOpen">
+  <button *ngIf="!navbarOpen" class="burger-button" type="button" data-toggle="collapse" data-target="#navbarContent"
+    aria-label="burger-menu" (click)="toggleNavbar() ">
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarContent" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav  center-navbar">
+      <li class="nav-item">
+        <button *ngIf="navbarOpen" class="navbar-toggler close-button" type="button" data-toggle="collapse"
+          data-target="#navbarContent" aria-label="toggle-menu" (click)="toggleNavbar()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <a class="nav-link" href='#'>IL COMITATO</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>SETTORI</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>EVENTI</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>FORMAZIONE</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>AFFILIZAZIONE E TESSERAMENTO</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>ATLETI RING</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>TEAM LOMBARDIA</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>PARTNER</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='#'>CONTATTI</a>
+      </li>
     </ul>
-   </div>
-
-   <div *ngIf="!navbarOpen" class="socialContainer">
-    <a href="https://www.instagram.com/federkombat_lombardia/" target="_blank"><img src="../../assets/src/images/instagram_small.png"  alt="Instagram"></a>
-    <a href="https://www.facebook.com/people/FederKombat-Lombardia/100063499965759/" target="_blank"><img src="../../assets/src/images/fb_small.png"  alt="Facebook"></a>
-   </div>
-
-
+  </div>
+  <div *ngIf="!navbarOpen" class="socialContainer">
+    <a href="https://www.instagram.com/federkombat_lombardia/" target="_blank"><img
+        src="../../assets/src/images/instagram_small.png" alt="Instagram"></a>
+    <a href="https://www.facebook.com/people/FederKombat-Lombardia/100063499965759/" target="_blank"><img
+        src="../../assets/src/images/fb_small.png" alt="Facebook"></a>
+  </div>
 </nav>

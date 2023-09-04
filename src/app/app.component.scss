@@ -46,6 +46,14 @@
   cursor: pointer;
   padding: 10px;
   background-color: $second-color;
+  transition: transform 0.3s ease;
+}
+
+.external-links-container> a:hover {
+  color: $second-color;
+  background-color: white;
+  border: 0;
+  transform: scale(1.1);
 }
 
 div.gallery:hover {
