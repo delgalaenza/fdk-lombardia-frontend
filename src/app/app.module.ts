@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ScrollListenerDirective } from './shared/directives/scroll-listener.directive';
 import { ResizeListenerDirective } from './shared/directives/resize-listener.directive';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ScrollListenerDirective,
     ResizeListenerDirective,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
