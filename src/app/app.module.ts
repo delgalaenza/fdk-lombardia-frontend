@@ -11,6 +11,8 @@ import { ScrollListenerDirective } from './shared/directives/scroll-listener.dir
 import { ResizeListenerDirective } from './shared/directives/resize-listener.directive';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SettoriComponent } from './pages/settori/settori.component';
+import { ComitatoComponent } from './pages/comitato/comitato.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './pages/home/home.component';
     ScrollListenerDirective,
     ResizeListenerDirective,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    SettoriComponent,
+    ComitatoComponent
   ],
   imports: [
     BrowserModule,

@@ -10,55 +10,61 @@
           data-target="#navbarContent" aria-label="toggle-menu" (click)="toggleNavbar()">
           <span aria-hidden="true">&times;</span>
         </button>
-        <a class="nav-link" href='#'>IL COMITATO</a>
+        <button routerLink="/" routerLinkActive="touchedLink" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="goToPage('/')">HOME</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>SETTORI</a>
+        <button class="nav-link" routerLink="/comitato" routerLinkActive="touchedLink" (click)="goToPage('comitato')">IL COMITATO</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>EVENTI</a>
+        <button class="nav-link" routerLink="/settori" routerLinkActive="touchedLink" (click)="goToPage('settori')">SETTORI</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>FORMAZIONE</a>
+        <button class="nav-link" href='#'>EVENTI</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>AFFILIZAZIONE E TESSERAMENTO</a>
+        <button class="nav-link" href='#'>FORMAZIONE</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>ATLETI RING</a>
+        <button class="nav-link" href='#'>AFFILIZAZIONE E TESSERAMENTO</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>TEAM LOMBARDIA</a>
+        <button class="nav-link" href='#'>ATLETI RING</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>PARTNER</a>
+        <button class="nav-link" href='#'>TEAM LOMBARDIA</button>
       </li>
       <li class="nav-item d-none d-sm-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href='#'>CONTATTI</a>
+        <button class="nav-link" href='#'>PARTNER</button>
+      </li>
+      <li class="nav-item d-none d-sm-inline">
+        <span class="nav-link">|</span>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" href='#'>CONTATTI</button>
       </li>
     </ul>
   </div>

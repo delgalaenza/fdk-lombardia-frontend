@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -10,12 +11,17 @@ export class NavbarComponent {
   scrolled: boolean = false;
   navbarOpen = false;
 
+  constructor(private router: Router) {}
+
   toggleNavbar() {
-    debugger;
     this.navbarOpen = !this.navbarOpen;
   }
 
   navScrolled(scrolled: boolean) {
     this.scrolled = scrolled;
+  }
+
+  goToPage(page: string){
+    this.router.navigate([page]);
   }
 }
