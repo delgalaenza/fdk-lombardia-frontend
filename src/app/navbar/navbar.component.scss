@@ -24,10 +24,6 @@
     padding: 10px;
   }
 
-  .nav-item > a:hover {
-    color: $base-color
-   }
-
 //solo smarphone
 @media (max-width:570px)  { 
   .navbar {
@@ -81,6 +77,10 @@
   .burger-button {
     display: none;
   }
+
+  .nav-item > a:hover {
+    color: $base-color
+   }
  }
 
 

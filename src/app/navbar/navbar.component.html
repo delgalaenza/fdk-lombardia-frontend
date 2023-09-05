@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled"
-  [class.hide-nav]="navbarOpen" appScrollListener (scrolled)="this.navScrolled($event)" appResizeListener (resized)="this.toggleNavbar();">
+  [class.hide-nav]="navbarOpen" appScrollListener (scrolled)="this.navScrolled($event)" appResizeListener [navbarOpen]="navbarOpen" (resized)="this.toggleNavbar();">
   <button *ngIf="!navbarOpen" class="burger-button" type="button" data-toggle="collapse" data-target="#navbarContent"
     aria-label="burger-menu" (click)="toggleNavbar() ">
   </button>

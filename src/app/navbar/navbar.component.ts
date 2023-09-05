@@ -11,6 +11,7 @@ export class NavbarComponent {
   navbarOpen = false;
 
   toggleNavbar() {
+    debugger;
     this.navbarOpen = !this.navbarOpen;
   }
 

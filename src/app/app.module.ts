@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { ScrollListenerDirective } from './shared/directives/scroll-listener.directive';
 import { ResizeListenerDirective } from './shared/directives/resize-listener.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ResizeListenerDirective } from './shared/directives/resize-listener.dir
     NavbarComponent,
     HeaderComponent,
     ScrollListenerDirective,
-    ResizeListenerDirective
+    ResizeListenerDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
