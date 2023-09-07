@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light navbar-expand-sm" [class.navbarScrolled]="scrolled"
+<nav class="navbar navbar-light bg-light navbar-expand-lg" [class.navbarScrolled]="scrolled"
   [class.hide-nav]="navbarOpen" appScrollListener (scrolled)="this.navScrolled($event)" appResizeListener [navbarOpen]="navbarOpen" (resized)="this.toggleNavbar();">
   <button *ngIf="!navbarOpen" class="burger-button" type="button" data-toggle="collapse" data-target="#navbarContent"
     aria-label="burger-menu" (click)="toggleNavbar() ">
@@ -12,55 +12,55 @@
         </button>
         <button routerLink="/" routerLinkActive="touchedLink" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="goToPage('/')">HOME</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" routerLink="/comitato" routerLinkActive="touchedLink" (click)="goToPage('comitato')">IL COMITATO</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" routerLink="/settori" routerLinkActive="touchedLink" (click)="goToPage('settori')">SETTORI</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>EVENTI</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>FORMAZIONE</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>AFFILIZAZIONE E TESSERAMENTO</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>ATLETI RING</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>TEAM LOMBARDIA</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">
         <button class="nav-link" href='#'>PARTNER</button>
       </li>
-      <li class="nav-item d-none d-sm-inline">
+      <li class="nav-item d-none d-lg-inline">
         <span class="nav-link">|</span>
       </li>
       <li class="nav-item">

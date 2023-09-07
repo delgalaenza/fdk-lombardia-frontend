@@ -12,7 +12,7 @@ export class ResizeListenerDirective {
 
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
-    if(window.innerWidth>570 && this.navbarOpen) {
+    if(window.innerWidth>992 && this.navbarOpen) {
       this.resized.next(true);
     }
   }
