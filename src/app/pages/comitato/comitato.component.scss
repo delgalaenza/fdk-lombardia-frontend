@@ -2,7 +2,7 @@
 
 section {
     /* background-image: radial-gradient(circle at 50% 50%,$base-color, white); */
-    background-image: url('../../../assets/src/images/lightBlue.jpg');
+    background-image: url('../../../assets/src/images/light.jpg');
     background-size: cover;
 }
 
@@ -12,7 +12,8 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background: linear-gradient(to bottom, $base-color, white)!important; 
+    background-image: url('../../../assets/src/images/lightBlue.jpg');
+    background-size: cover;
   }
   
   .bannerImage {

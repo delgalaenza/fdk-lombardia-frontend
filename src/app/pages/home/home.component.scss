@@ -31,7 +31,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to bottom, $base-color, white);
+  background-image: url('../../../assets/src/images/lightBlue.jpg');
+  background-size: cover;
 }
 
 .external-links-container> a {
