@@ -26,7 +26,7 @@
   }
 
   //solo smarphone
-@media (max-width:570px)  { 
+@media (width<992px)  { 
     .noSmallSizeItem {
         display: none!important;
     }
