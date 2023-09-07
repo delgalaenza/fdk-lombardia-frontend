@@ -12,6 +12,14 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
+  #navbarContent {
+    white-space: nowrap;
+  }
+
+  .overflowed-nav{
+    font-size: small;
+  }
+
   .navbar-brand {
     height: 100%;
   }

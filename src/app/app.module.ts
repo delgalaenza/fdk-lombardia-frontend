@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SettoriComponent } from './pages/settori/settori.component';
 import { ComitatoComponent } from './pages/comitato/comitato.component';
+import { OverflowDetectorDirective } from './shared/directives/overflow-detector.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ComitatoComponent } from './pages/comitato/comitato.component';
     FooterComponent,
     HomeComponent,
     SettoriComponent,
-    ComitatoComponent
+    ComitatoComponent,
+    OverflowDetectorDirective
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@
   <button *ngIf="!navbarOpen" class="burger-button" type="button" data-toggle="collapse" data-target="#navbarContent"
     aria-label="burger-menu" (click)="toggleNavbar() ">
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarContent" [ngClass]="{ 'show': navbarOpen }">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarContent" [ngClass]="{ 'show': navbarOpen }" appOverflowDetector>
     <ul class="navbar-nav  center-navbar">
       <li class="nav-item">
         <button *ngIf="navbarOpen" class="navbar-toggler close-button" type="button" data-toggle="collapse"
